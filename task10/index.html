@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="py-5">
+      <div class="container">
+        <h1>Product</h1>
+        <div class="mb-4">
+          <label for="productImage">Product Image</label>
+          <input
+            class="form-control"
+            type="file"
+            name="productImage"
+            id="productImage"
+            accept=".jpg"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="productName">Product Name</label>
+          <input
+            class="form-control"
+            type="text"
+            name="productName"
+            id="productName"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="productPrice">Product Price</label>
+          <input
+            class="form-control"
+            type="number"
+            name="productPrice"
+            id="productPrice"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="productCateg">Product Category</label>
+          <input
+            class="form-control"
+            type="text"
+            name="productCateg"
+            id="productCateg"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="productDesc">Product Descrption</label>
+          <input
+            class="form-control"
+            type="text"
+            name="productDesc"
+            id="productDesc"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="oldPrice">Product oldPrice</label>
+          <input
+            class="form-control w-25"
+            type="number"
+            name="oldPrice"
+            id="oldPrice"
+          />
+        </div>
+
+        <div class="mb-4">
+          <h6>On Sale</h6>
+          <label for="productSaleOn">Yes</label>
+          <input
+            type="radio"
+            name="productSale"
+            id="productSaleOn"
+            value="sale"
+          />
+
+          <label for="productSaleOff">No</label>
+          <input type="radio" name="productSale" id="productSaleOff" />
+        </div>
+        <button class="btn btn-info mt-4" id="addId" onclick="addProduct()">
+          Add Product
+        </button>
+        <button
+          class="btn btn-info mt-4 d-none"
+          id="up"
+          onclick="UpdateProduct() "
+        >
+          update
+        </button>
+
+        <button class="btn btn-danger mt-4" onclick="deleteAll()">
+          Delete All
+        </button>
+
+        <div class="row" id="r"></div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
